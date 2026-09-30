@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOWGUARD — Attention Contract</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="noise"></div>
+
+<div class="shell">
+
+    <nav class="topbar">
+
+        <div class="logo">
+            <span class="logoMark"></span>
+            <span>FLOWGUARD</span>
+        </div>
+
+        <div class="topbarCenter">
+            <span class="liveDot"></span>
+            <span id="connectionStatus">CONNECTING</span>
+        </div>
+
+        <div class="topbarRight">
+            <span class="version">LIVE PROTOTYPE</span>
+            <span class="profile">SK</span>
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="heroSection">
+
+            <div class="heroCopy">
+
+                <div class="eyebrow">
+                    ATTENTION CONTRACT · 01
+                </div>
+
+                <h1>
+                    You stay<br>
+                    <em>in flow.</em>
+                </h1>
+
+                <p class="heroDescription">
+                    Your agent keeps working in the background.
+                    It only pulls you back in when your attention
+                    actually matters.
+                </p>
+
+                <div class="heroActions">
+
+                    <button id="startButton" class="startButton">
+                        <span class="playIcon">▶</span>
+                        Start background work
+                    </button>
+
+                    <span class="shortcut">
+                        or press <kbd>SPACE</kbd>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="attentionOrb">
+
+                <div class="orbGlow"></div>
+
+                <div class="orb">
+                    <div class="orbInner">
+                        <span class="orbLabel">YOU ARE</span>
+                        <strong id="attentionState">STUDYING</strong>
+                        <span class="orbLine"></span>
+                        <span class="orbTime" id="timer">30:00</span>
+                        <span class="orbLabel">UNTIL FLOW WINDOW ENDS</span>
+                    </div>
+                </div>
+
+                <div class="orbCaption">
+                    <span class="tinyDot"></span>
+                    Attention protected
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTRACT STRIP -->
+
+        <section class="contractStrip">
+
+            <div class="contractStatement">
+
+                <span class="quoteMark">“</span>
+
+                <div>
+                    <span class="smallLabel">YOUR CONTRACT</span>
+
+                    <p>
+                        Don't interrupt me unless
+                        <strong>you really need me.</strong>
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contractRules">
+
+                <div class="rule">
+                    <span class="ruleIcon continueIcon">↗</span>
+                    <div>
+                        <small>ROUTINE</small>
+                        <strong>Keep going</strong>
+                    </div>
+                </div>
+
+                <div class="rule">
+                    <span class="ruleIcon queueIcon">Ⅱ</span>
+                    <div>
+                        <small>UNCERTAIN</small>
+                        <strong>Ask later</strong>
+                    </div>
+                </div>
+
+                <div class="rule">
+                    <span class="ruleIcon interruptIcon">!</span>
+                    <div>
+                        <small>IMPORTANT</small>
+                        <strong>Pull me in</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN GRID -->
+
+        <section class="dashboardGrid">
+
+
+            <!-- LEFT -->
+
+            <div class="leftColumn">
+
+                <div class="sectionHeading">
+
+                    <div>
+                        <span class="sectionNumber">02</span>
+                        <h2>What I'm handling</h2>
+                    </div>
+
+                    <span class="runningLabel">
+                        <span></span>
+                        BACKGROUND
+                    </span>
+
+                </div>
+
+
+                <div id="taskList" class="taskCards">
+
+                    <div class="emptyTasks">
+                        <div class="emptyIcon">✦</div>
+                        <p>No background work yet.</p>
+                        <span>Start the agent to give FLOWGUARD something to handle.</span>
+                    </div>
+
+                </div>
+
+
+                <!-- INTENT -->
+
+                <div class="intentSection">
+
+                    <div class="sectionHeading compact">
+
+                        <div>
+                            <span class="sectionNumber">03</span>
+                            <h2>Change my mind</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="intentCard">
+
+                        <div class="intentTop">
+                            <span class="intentPulse"></span>
+                            <span>LIVE INSTRUCTION</span>
+                        </div>
+
+                        <div class="intentInputRow">
+
+                            <input
+                                id="intentInput"
+                                type="text"
+                                value="Only paid AI/ML internships"
+                                placeholder="Tell the agent what changed..."
+                            >
+
+                            <button id="updateIntentButton">
+                                Update
+                                <span>↗</span>
+                            </button>
+
+                        </div>
+
+                        <div class="currentIntent">
+                            <span>Current intent</span>
+                            <strong id="currentIntent">
+                                Find AI/ML internships
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+
+            <aside class="rightColumn">
+
+
+                <!-- DECISION CARD -->
+
+                <div class="decisionCard">
+
+                    <div class="decisionHeader">
+                        <span class="sectionNumber">04</span>
+                        <span>DECISION ENGINE</span>
+                        <span class="decisionStatus">LISTENING</span>
+                    </div>
+
+                    <div class="decisionTitle">
+                        <h2>
+                            Should I<br>
+                            interrupt you?
+                        </h2>
+
+                        <div class="decisionQuestion">?</div>
+                    </div>
+
+                    <div class="decisionDescription">
+                        Every background event passes through
+                        FLOWGUARD before it reaches you.
+                    </div>
+
+                    <div class="decisionStates">
+
+                        <div class="decisionState continue">
+                            <span class="stateNumber">01</span>
+                            <div>
+                                <strong>CONTINUE</strong>
+                                <small>Handle it yourself</small>
+                            </div>
+                            <span class="stateArrow">↗</span>
+                        </div>
+
+                        <div class="decisionState queue">
+                            <span class="stateNumber">02</span>
+                            <div>
+                                <strong>QUEUE</strong>
+                                <small>Wait for a better moment</small>
+                            </div>
+                            <span class="stateArrow">Ⅱ</span>
+                        </div>
+
+                        <div class="decisionState interrupt">
+                            <span class="stateNumber">03</span>
+                            <div>
+                                <strong>INTERRUPT</strong>
+                                <small>Your attention is needed</small>
+                            </div>
+                            <span class="stateArrow">!</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LIVE EVENTS -->
+
+                <div class="eventsCard">
+
+                    <div class="eventsHeader">
+
+                        <div>
+                            <span class="sectionNumber">05</span>
+                            <h2>Activity</h2>
+                        </div>
+
+                        <span class="activityPulse"></span>
+
+                    </div>
+
+                    <div id="eventList" class="eventList">
+
+                        <div class="emptyActivity">
+                            Waiting for the agent...
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+        </section>
+
+
+        <!-- METRICS -->
+
+        <section class="metricsSection">
+
+            <div class="metricsIntro">
+
+                <span class="sectionNumber">06</span>
+
+                <div>
+                    <h2>Attention, measured.</h2>
+                    <p>
+                        FLOWGUARD tracks whether an interruption
+                        was actually worth your attention.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="metricsGrid">
+
+                <div class="metric">
+                    <span>EVENTS</span>
+                    <strong id="totalEvents">0</strong>
+                </div>
+
+                <div class="metric">
+                    <span>CONTINUED</span>
+                    <strong id="continueCount">0</strong>
+                </div>
+
+                <div class="metric">
+                    <span>QUEUED</span>
+                    <strong id="queueCount">0</strong>
+                </div>
+
+                <div class="metric highlight">
+                    <span>INTERRUPTED</span>
+                    <strong id="interruptCount">0</strong>
+                </div>
+
+                <div class="metric">
+                    <span>CORRECTIONS</span>
+                    <strong id="corrections">0</strong>
+                </div>
+
+                <div class="metric">
+                    <span>STALE TASKS</span>
+                    <strong id="staleCancelled">0</strong>
+                </div>
+
+                <div class="metric">
+                    <span>INTERRUPT LATENCY</span>
+                    <strong id="interruptLatency">0 ms</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div class="footerLogo">
+                <span class="logoMark"></span>
+                FLOWGUARD
+            </div>
+
+            <p>
+                An attention contract layer for
+                interruptible real-time agents.
+            </p>
+
+            <span class="footerTag">
+                THE AGENT CAN WAIT.
+                <strong>YOU DON'T HAVE TO.</strong>
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- INTERRUPT MODAL -->
+
+<div id="interruptModal" class="interruptOverlay hidden">
+
+    <div class="interruptModal">
+
+        <div class="interruptTop">
+
+            <div class="warningSymbol">
+                !
+            </div>
+
+            <span>
+                FLOWGUARD · ATTENTION REQUEST
+            </span>
+
+        </div>
+
+        <div class="interruptBody">
+
+            <span class="modalEyebrow">
+                YOUR ATTENTION IS NEEDED
+            </span>
+
+            <h2>
+                I found something<br>
+                <em>you need to decide.</em>
+            </h2>
+
+            <p id="interruptReason">
+                The agent requires your decision.
+            </p>
+
+        </div>
+
+        <div class="modalActions">
+
+            <button id="deferModalButton" class="laterButton">
+                Not now
+                <span>→</span>
+            </button>
+
+            <button id="handleModalButton" class="handleButton">
+                I'm here
+                <span>↗</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+<script>
+
+document.addEventListener("keydown", function(event) {
+
+    if (
+        event.code === "Space" &&
+        event.target.tagName !== "INPUT"
+    ) {
+
+        event.preventDefault();
+
+        document
+            .getElementById("startButton")
+            .click();
+    }
+
+});
+
+</script>
+
+</body>
+</html>

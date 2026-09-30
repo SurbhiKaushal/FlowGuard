@@ -1,0 +1,82 @@
+[
+  {
+    "id": "INT001",
+    "company": "Samsung Research",
+    "role": "AI/ML Research Intern",
+    "location": "Bangalore",
+    "remote": false,
+    "paid": true,
+    "skills": ["Python", "Machine Learning", "AI"],
+    "deadline": "2026-10-05"
+  },
+  {
+    "id": "INT002",
+    "company": "Microsoft",
+    "role": "Software Engineering Intern",
+    "location": "Hyderabad",
+    "remote": false,
+    "paid": true,
+    "skills": ["Java", "Python", "Data Structures"],
+    "deadline": "2026-10-12"
+  },
+  {
+    "id": "INT003",
+    "company": "TechNova",
+    "role": "AI Engineering Intern",
+    "location": "Remote",
+    "remote": true,
+    "paid": true,
+    "skills": ["Python", "Machine Learning"],
+    "deadline": "2026-10-02"
+  },
+  {
+    "id": "INT004",
+    "company": "DataSphere",
+    "role": "Data Science Intern",
+    "location": "Chennai",
+    "remote": false,
+    "paid": false,
+    "skills": ["Python", "SQL", "Data Science"],
+    "deadline": "2026-10-18"
+  },
+  {
+    "id": "INT005",
+    "company": "CloudWorks",
+    "role": "Backend Developer Intern",
+    "location": "Remote",
+    "remote": true,
+    "paid": false,
+    "skills": ["Java", "Node.js", "SQL"],
+    "deadline": "2026-10-20"
+  },
+  {
+    "id": "INT006",
+    "company": "NeuralLabs",
+    "role": "Machine Learning Intern",
+    "location": "Bangalore",
+    "remote": false,
+    "paid": true,
+    "skills": ["Python", "Machine Learning", "TensorFlow"],
+    "deadline": "2026-10-03"
+  },
+  {
+    "id": "INT007",
+    "company": "FinTech AI",
+    "role": "AI Developer Intern",
+    "location": "Mumbai",
+    "remote": false,
+    "paid": true,
+    "skills": ["Python", "AI", "SQL"],
+    "deadline": "2026-10-15"
+  },
+  {
+    "id": "INT008",
+    "company": "OpenCode",
+    "role": "Software Developer Intern",
+    "location": "Remote",
+    "remote": true,
+    "paid": true,
+    "skills": ["Java", "C++", "DSA"],
+    "deadline": "2026-10-25"
+  }
+]
